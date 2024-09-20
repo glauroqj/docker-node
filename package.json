@@ -4,9 +4,9 @@
   "private": true,
   "author": "Glauro Q Juliani",
   "scripts": {
-    "dev": "react-scripts start src && cra-append-sw --mode dev ./public/service-worker-custom.js",
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' react-scripts start src && cra-append-sw --mode dev ./public/service-worker-custom.js",
     "build": "react-scripts build src && cra-append-sw --skip-compile ./public/service-worker-custom.js",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "NODE_OPTIONS='--openssl-legacy-provider' yarn build && firebase deploy"
   },
   "dependencies": {
     "cra-append-sw": "^2.6.1",
@@ -37,7 +37,7 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^7.0.0",
+    "sass": "^1.49.9",
     "redux-devtools-extension": "^2.13.8"
   }
 }
