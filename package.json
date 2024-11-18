@@ -11,7 +11,7 @@
   "dependencies": {
     "cra-append-sw": "^2.6.1",
     "date-fns": "^1.30.1",
-    "firebase": "^6.3.5",
+    "firebase": "^10.9.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.0",
